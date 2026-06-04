@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GreenPace Product Section</title>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+body{
+    background:#f5f9f6;
+}
+.products{
+    padding:80px 8%;
+}
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+.section-title h2{
+    font-size:2.5rem;
+    color:#1b5e20;
+    margin-bottom:10px;
+}
+.section-title p{
+    color:#555;
+    max-width:700px;
+    margin:auto;
+    line-height:1.6;
+}
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+.card{
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    transition:0.3s ease;
+}
+.card:hover{
+    transform:translateY(-10px);
+}
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+.card-content{
+    padding:20px;
+}
+.card-content h3{
+    color:#1b5e20;
+    margin-bottom:10px;
+}
+.card-content p{
+    color:#666;
+    line-height:1.6;
+    margin-bottom:15px;
+}
+.tag{
+    display:inline-block;
+    background:#e8f5e9;
+    color:#1b5e20;
+    padding:8px 14px;
+    border-radius:20px;
+    font-size:0.85rem;
+    font-weight:bold;
+}
+.cta{
+    text-align:center;
+    margin-top:50px;
+}
+.cta a{
+    text-decoration:none;
+    background:#2e7d32;
+    color:white;
+    padding:15px 35px;
+    border-radius:30px;
+    font-weight:bold;
+    transition:0.3s;
+}
+.cta a:hover{
+    background:#1b5e20;
+}
+</style>
+</head>
+<body>
+
+<section class="products">
+    <div class="section-title">
+        <h2>Fresh Farm Products</h2>
+        <p>
+            GreenPace connects farmers directly with buyers, providing access to fresh,
+            high-quality agricultural products while promoting sustainable farming practices.
+        </p>
+    </div>
+
+    <div class="product-grid">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1560493676-04071c5f467b" alt="Vegetables">
+            <div class="card-content">
+                <h3>Fresh Vegetables</h3>
+                <p>Locally sourced vegetables harvested directly from trusted farmers.</p>
+                <span class="tag">Farm Fresh</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1573246123716-6b1782bfc499" alt="Fruits">
+            <div class="card-content">
+                <h3>Organic Fruits</h3>
+                <p>Naturally grown fruits packed with freshness and nutritional value.</p>
+                <span class="tag">Organic</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1518977676601-b53f82aba655" alt="Grains">
+            <div class="card-content">
+                <h3>Quality Grains</h3>
+                <p>Premium grains supplied directly from verified agricultural producers.</p>
+                <span class="tag">Top Quality</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1506617564039-2f3b650b7010" alt="Farm Produce">
+            <div class="card-content">
+                <h3>Seasonal Produce</h3>
+                <p>Explore a variety of seasonal farm products available throughout the year.</p>
+                <span class="tag">Eco-Friendly</span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="cta">
+        <a href="#">Explore Products</a>
+    </div>
+</section>
+
+</body>
+</html>
